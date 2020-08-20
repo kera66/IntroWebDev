@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- *************************************************************** -->
+    <!-- HEAD Section -->
+
+    <title>Bootstrap Examples - Layout v4.4 - 10.1.18 </title>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- My Project CSS -->
+    <link rel="stylesheet" href="css/bsLayout-style.css">
+
+</head>
+
+<body>
+
+    <!-- *************************************************************** -->
+    <!-- Page Header Section -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">BS Layout >></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="bsLayoutAnnotated.html">Annotated Example</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gridPractice.html" target="_blank">Grid Practice</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contentPractice.html" target="_blank">Content Practice</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bsLayoutNotes.txt" target="_blank">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addToHTML.txt" target="_blank">BS Snippets</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- *************************************************************** -->
+    <!-- Page Header Section -->
+    <br><br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="header-bg text-padding text-center">
+                    Bootstrap Layout Examples
+                    <br>
+                    <i class="header-version">v4.4 - 10.1.18</i>
+                </h2>
+            </div>
+        </div>
+        <!-^^ row -->
+    </div>
+    <!--^^ container-fluid -->
+
+    <!-- *************************************************************** -->
+    <!-- How To Section -->
+    <section>
+        
+        <div class="container-fluid">
+
+            <div class="alert alert-warning">
+            
+                <h2 class=" text-padding text-center">Welcome to our<br>Bootstrap Layout Example Page</h2>
+                <br>
+                <h4>Use these examples to assist in your projects. Please be sure to:</h4>
+
+                <ul>
+                    <li>Read the detailed notes in the <a target="_blank" href="bsLayoutNotes.txt">bsLayoutNotes.txt</a> file.</li>
+
+                    <li>Use proper formatting - indent your code for easier reading.</li>
+
+                    <li>Comment your code - specifically your ending <code>&lt;/div&gt;</code> tags and clearly mark each section.</li>
+
+                    <li>Use your on-line resources:</li>
+
+                    <ul>
+                        <li><a target="_blank" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"><code>GetBootstrap Getting Started</code></a></li>
+
+                        <li><a target="_blank" href="https://www.w3schools.com/bootstrap4/default.asp"><code>W3Schools Bootstrap 4 Tutorial</code></a></li>
+
+                    </ul>
+
+                    <li>Be sure to add the required BS code to all of your HTML pages - use the code snippets from <a target="_blank" href="addToHTML.txt">addToHTML.txt</a>.</li>
+
+                    <li>Or when starting a new page, use the <a target="_blank" href="bsTemplate.html">bsTemplate.html</a> as a starting template for ALL your projects HTML files. Make a copy of this file and rename it for each file in your project. Be sure you also have the <code>css/style.css</code> subfoler and file in your project folder. And add any new classes to this file.</li>                    
+
+                    <li>Go to TA hours Sunday 5-7 and Monday through Thursday from 7-9PM in Williams 303</li>
+                </ul>
+                
+            </div>
+            <!-- ^^bg color -->
+            
+        </div>
+        <!-- ^^containter -->
+        
+    </section>
+    <!-- ^^ How To -->
+
+    <!-- *************************************************************** -->
+    <!-- Container Examples -->
+    <section>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Intro Content Container -->
+        <div class="container-fluid">
+
+            <h2 class="header-bg text-padding">Container Examples</h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/layout/overview/#containers">Getbootstrap</a> -->
+                <a class="text-danger" target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp">W3Schools</a>
+            </p>
+
+            <!-- Info Title -->
+            <h3>Fixed-Width Container</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>A default container uses the <code>.container </code> class --> e.g. <code>&lt;div  class="container"&gt;</code> (shrink the screen size)</p>
+            </div>
+
+        </div>
+        <!-- ^^Intro Content containter -->
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Start:  Fixed-Width Container Example -->
+        <div class="container">
+
+            <!-- A filler row to illustrate the length of the container -->
+            <div class="row bg-grey">
+                <br>
+                <br>
+                <br>
+            </div>
+
+        </div>
+        <!-- ^^ fixed-width containter -->
+        <!-- End:  Fixed-Width Container Example -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- B.  Fluid Container Example -->
+
+        <!-- Info Title -->
+        <br>
+        <div class="container-fluid">
+            <h3>Fluid-Width Container - uses <code>div class="container-fluid"</code></h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>A full-width container, or fluid container, uses the <code>.container-fluid </code> class --> e.g. <code>&lt;div  class="container-fluid"&gt;</code> (shrink the screen size)</p>
+            </div>
+
+        </div>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Start: Fluid Container Example -->
+        <div class="container-fluid">
+
+            <!-- A filler row to illustrate the length of the container -->
+            <div class="row bg-grey border">
+                <br>
+                <br>
+                <br>
+            </div>
+
+        </div>
+        <!-- ^^containter -->
+        <!-- End:  Fluid Container Example -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    </section>
+    <!-- ^^container examples -->
+
+    <!-- *************************************************************** -->
+    <!-- Grid Examples -->
+    <br>
+    <section>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Grid Examples Container  -->
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Intro Section -->
+            <h2 class="header-bg text-padding">Grid System Examples</h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/layout/grid/">Getbootstrap</a> -->
+                <a class="text-danger" target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp">W3Schools</a>
+            </p>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                Always use proper formatting, indentation and commenting for your grid layouts.
+                <br> All columns are wrapped in rows - <code>&lt;div class="row"&gt;</code>
+                <br> All columns then have their own nested <code>div</code>with a specific size <code>&lt;div  class="col-#"&gt;</code>where # is a lenght of the column from 1..12
+                <br> The total for ALL columns in a row must add up to <code>12</code>
+            </div>
+
+            <h4>Single Row Examples</h4>
+
+            <div class="container-fluid">
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  12 -->
+                <div class="row bg-grey">
+                    <div class="col-12 border">.col-12</div>
+                </div>
+                <!-- ^^row -->
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  6-6 -->
+                <div class="row bg-grey">
+                    <div class="col-6 border">.col-6</div>
+                    <div class="col-6 border">.col-6</div>
+                </div>
+                <!-- ^^row -->
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  4-4-4 -->
+                <div class="row bg-grey">
+                    <div class="col-4 border">.col-4</div>
+                    <div class="col-4 border">.col-4</div>
+                    <div class="col-4 border">.col-4</div>
+                </div>
+                <!-- ^^row -->
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  3-3-3-3 -->
+                <div class="row bg-grey">
+                    <div class="col-3 border">.col-3</div>
+                    <div class="col-3 border">.col-3</div>
+                    <div class="col-3 border">.col-3</div>
+                    <div class="col-3 border">.col-3</div>
+                </div>
+                <!-- ^^row -->
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  2-2-2-2-2-2 -->
+                <div class="row bg-grey">
+                    <div class="col-2 border">.col-2</div>
+                    <div class="col-2 border">.col-2</div>
+                    <div class="col-2 border">.col-2</div>
+                    <div class="col-2 border">.col-2</div>
+                    <div class="col-2 border">.col-2</div>
+                    <div class="col-2 border">.col-2</div>
+                </div>
+                <!-- ^^row -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  1-1-1-1-1-1-1-1-1-1-1-1 -->
+                <div class="row bg-grey">
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                    <div class="col-1 border">.col-1</div>
+                </div>
+                <!-- ^^row -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  8-4 -->
+                <div class="row bg-grey">
+                    <div class="col-8 border">.col-8</div>
+                    <div class="col-4 border">.col-4</div>
+                </div>
+                <!-- ^^row -->
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  3-6-3 -->
+                <div class="row bg-grey">
+                    <div class="col-3 border">.col-3</div>
+                    <div class="col-6 border">.col-6</div>
+                    <div class="col-3 border">.col-3</div>
+                </div>
+                <!-- ^^row -->
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <!-- Col:  3-3-6 -->
+                <div class="row bg-grey">
+                    <div class="col-3 border">.col-3</div>
+                    <div class="col-3 border">.col-3</div>
+                    <div class="col-6 border">.col-6</div>
+                </div>
+                <!-- ^^row -->
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <br>
+
+            </div>
+            <!-- ^^container-fluid -->
+
+        </div>
+        <!-- ^^container-fluid -->
+        <br>
+    </section>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- Nested Row Example  -->
+    <section>
+        <div class="container-fluid">
+
+            <h4>Nested Row Examples</h4>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <div class="container-fluid">
+
+                <div class="row bg-grey">
+
+                    <div class="col-6">
+
+                        <!-- Nested Row -->
+                        <div class="row">
+                            <div class="col-12 bg-darkgrey">
+                                <p>.col-12</p>
+                            </div>
+
+                            <div class="col-12">
+                                <p>.col-12</p>
+                            </div>
+                        </div>
+                        <!-- ^^ nested row -->
+
+                    </div>
+                    <!-- ^^col-6 -->
+
+                    <div class="col-6">
+                        <p>.col-4</p>
+                        <p>...</p>
+                    </div>
+                    <!-- ^^col-6 -->
+
+                </div>
+                <!-- ^^row -->
+                <br>
+
+                <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+                <div class="row bg-grey">
+
+                    <div class="col-4">
+                        <p>.col-4</p>
+                        <p>...</p>
+                    </div>
+                    <!-- ^^col-6 -->
+
+                    <div class="col-8">
+
+                        <!-- Nested Row -->
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 bg-darkgrey">
+                                        <p>.col-6</p>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <p>.col-6</p>
+                                    </div>
+                                </div>
+                                <!-- ^^ nested row -->
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>.col-6</p>
+                                    </div>
+
+                                    <div class="col-6 bg-darkgrey">
+                                        <p>.col-6</p>
+                                    </div>
+                                </div>
+                                <!-- ^^ nested row -->
+                            </div>
+
+                        </div>
+                        <!-- ^^ nested row -->
+
+                    </div>
+                    <!-- ^^col-6 -->
+
+                </div>
+                <!-- ^^row -->
+
+            </div>
+            <!-- ^^container -->
+        </div>
+        <!-- ^^container -->
+        <br>
+    </section>
+
+    <!-- *************************************************************** -->
+    <!-- Typography -->
+    <section>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Typography Example Container  -->
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Info Section  -->
+            <h2 class="header-bg text-padding">Typography Examples</h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/content/typography/">Getbootstrap</a> -->
+                <a class="text-danger" target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_typography.asp">W3Schools</a>
+            </p>
+
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Text Alignment Section  -->
+            <h4 class="bg-grey w-50">Utility classes to align text</h4>
+            <p class="text-left">Text styled with <code>class="text-left"</code></p>
+            <p class="text-center">Text styled with <code>class="text-center"</code></p>
+            <p class="text-right">Text styled with <code>class="text-right"</code></p>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Text Format Section  -->
+            <h4 class="bg-grey w-50">Utility classes to format text</h4>
+            <p class="text-lowercase">Text styled with <code>class="text-lowercase"</code></p>
+            <p class="text-uppercase">Text styled with <code>class="text-uppercase"</code></p>
+            <p class="text-capitalize">text styled with <code>class="text-capitalize"</code></p>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Text Color Section  -->
+            <h4 class="bg-grey w-50">Utility classes to change text color</h4>
+            <p class="text-muted">Text styled with <code>class="text-muted"</code></p>
+            <p class="text-primary">Text styled with <code>class="text-muted"</code></p>
+            <p class="text-success">Text styled with <code>class="text-success"</code></p>
+            <p class="text-info">Text styled with <code>class="text-info"</code></p>
+            <p class="text-warning">Text styled with <code>class="text-warning"</code></p>
+            <p class="text-danger">Text styled with <code>class="text-danger"</code></p>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Background Color Section  -->
+            <h4 class="bg-grey w-50">Utility classes to change background color</h4>
+            <p class="bg-muted">Text styled with <code>class="bg-muted"</code></p>
+            <p class="bg-primary">Text styled with <code>class="bg-muted"</code></p>
+            <p class="bg-success">Text styled with <code>class="bg-success"</code></p>
+            <p class="bg-info">Text styled with <code>class="bg-info"</code></p>
+            <p class="bg-warning">Text styled with <code>class="bg-warning"</code></p>
+            <p class="bg-danger">Text styled with <code>class="bg-danger"</code></p>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        </div>
+        <!--^^container -->
+    </section>
+
+    <!-- *************************************************************** -->
+    <!-- Image Alignment Examples-->
+    <section>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Image Alignment Example Container  -->
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Info Section -->
+            <h2 class="header-bg text-padding">
+                Image Alignment Examples
+            </h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/content/images/#responsive-images">Getbootstrap</a> -->
+                <a class="text-danger" target="_blank" href="https://www.w3schools.com/bootstrap4/bootstrap_images.asp">W3Schools (scroll down to Aligning Images)</a>
+            </p>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    For images we now <u>always</u> use the <code>.img-fluid</code> class with all our <code>&lt;img&gt;</code> tags.
+                    <br> For example, <code>&lt;img  class="img-fluid"&gt;</code>
+                    <br>
+                    <br> And we <u>no longer</u> use <code>height="xx"</code> or <code>width="xx"</code>
+                    <br>
+                    <br> To center an image we use the classes <code>.mx-auto .d-block</code>
+                    <br> For example, <code>&lt;img  class="img-fluid mx-auto d-block"&gt;</code>
+                </p>
+                <hr>
+                <p>
+                    To left align an image use the class <code>.float-left</code> For example, <code>&lt;img  class="float-left"&gt;</code>
+                    <br> To right align an image use the class <code>.float-right</code> For example, <code>&lt;img  class="float-right"&gt;</code>
+                    <br><br> Note, these classes work for images but do not include padding or margins.
+                </p>
+            </div>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Start:  Block Alignment using images -->
+            <br>
+            <div class="container-fluid">
+                <div class="row border">
+                    <div class="col-4">
+                        <p><code>class="float-left"</code></p>
+                        <img src="http://www.ithaca.edu/aecenter/docs/highrezimages/aecenter1.jpg" alt="..." class="rounded img-fluid float-left" width="100">
+                        <br>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-center"><code>class="mx-auto d-block"</code></p>
+                        <img src="http://www.ithaca.edu/aecenter/docs/highrezimages/aecenter1.jpg" alt="..." class="rounded img-fluid mx-auto d-block" width="100">
+                        <br>
+                    </div>
+                    <div class="col-4">
+                        <p class="text-right"><code>class="float-right"</code></p>
+                        <img src="http://www.ithaca.edu/aecenter/docs/highrezimages/aecenter1.jpg" alt="..." class="rounded img-fluid float-right" width="100">
+                        <br>
+                    </div>
+                    <!--^^row -->
+                </div>
+                <!--^^container -->
+            </div>
+            <!--^^container -->
+            <!-- End:  Block Alignment using images -->
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        </div>
+        <!-- ^^containter -->
+
+    </section>
+
+    <!-- *************************************************************** -->
+    <!-- Image Helper Classes -->
+    <br>
+
+    <!-- *************************************************************** -->
+    <!-- Embedded Video Section -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <section id="embed-video">
+
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <h2 class="header-bg text-padding">
+                Responsive Embedded Video
+            </h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/embed/">Getbootstrap</a> -->
+                <a class="text-danger" target="_blank" href="https://www.w3schools.com/bootstrap/bootstrap_images.asp">W3Schools (scroll down to Responsive Embeds)</a>
+            </p>
+
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    To embed a video from YouTube or Vimeo (Step 1) use the class <code>.embed-responsive-item</code> in the <code>&lt;iframe&gt;</code> tag.
+                    <br> For example:
+                    <code>&lt;iframe class="embed-responsive-item"&gt;</code>
+
+                    <br><br> And then (Step 2) remove the <code>height="xx"</code> and <code>width="xx</code> from all your YouTube or Vimeo <code>&lt;iframe&gt;</code>'s.
+
+                    <br><br> And then (Step 3) wrap the <code>&lt;iframe class="embed-responsive-item"&gt;</code> tag from step 1 in another <code>&lt;div&gt;</code> tag. <br> For example:
+                    <code>&lt;div class="embed-responsive embed-responsive-16by9"&gt;</code>
+                </p>
+            </div>
+            <br>
+
+
+            <!-- row 1 -->
+            <div class="row">
+
+                <!-- col 1 -->
+                <div class="col-6">
+
+                    <h4>When it is the...</h4>
+
+                    <!-- responsive embed video -->
+                    <div class="embed-responsive embed-responsive-16by9">
+
+
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9jK-NcRmVcw">
+                        </iframe>
+
+
+                    </div>
+                    <!-- ^^ responsive embed video -->
+
+                </div>
+                <!-- ^^ col 1 -->
+
+                <!-- col 2 -->
+                <div class="col-6">
+
+                    <h4>You need to...</h4>
+
+                    <!-- responsive embed video -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zUzd9KyIDrM"></iframe>
+                    </div>
+                    <!-- ^^ responsive embed video -->
+
+                </div>
+                <!-- ^^ col 2 -->
+
+            </div>
+            <!-- ^^Row 1 -->
+
+        </div>
+        <!-- ^^ Embedded Video container -->
+
+        <br>
+    </section>
+    <!-- ^^ Embedded Video section -->
+
+    <!-- *************************************************************** -->
+    <!-- Table Examples -->
+    <section>
+
+        <!-- fixed nav bar cluge -->
+        <br>
+        <br>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Table Examples Container  -->
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <h2 class="header-bg text-padding">
+                Table Examples
+            </h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/content/tables/">Getbootstrap</a> -->
+                <a class="text-danger" target="_blank" href="http://www.w3schools.com/bootstrap/bootstrap_tables.asp">W3Schools</a>
+            </p>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Generic Table Sub-Section  -->
+            <h3>Default Table Example</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    The default display of a table uses the class <code>.table</code> in the <code>&lt;table&gt;</code> tag.
+                    <br> For example, <code>&lt;table class="table"&gt;</code>
+                </p>
+            </div>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <table class="table">
+                <!-- Table Head -->
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Striped Table Sub-Section  -->
+            <hr>
+            <h3>Striped Table Example</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    A Striped Table uses the <code>.table-striped</code> class to add alternating stripes to a table.
+                    <br> For example, <code>&lt;table class="table table-striped"&gt;</code>
+                </p>
+            </div>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Striped Table -->
+            <table class="table table-striped">
+                <!-- Table Head -->
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Bordered Table Sub-Section  -->
+            <hr>
+            <h3>Bordered Table Example</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    A Bordered Table uses the <code>.table-bordered</code> class to add alternating stripes to a table.
+                    <br> For example, <code>&lt;table class="table table-bordered"&gt;</code>
+                </p>
+            </div>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Bordered Table -->
+            <table class="table table-bordered">
+                <!-- Table Head -->
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Hovered Table Sub-Section  -->
+            <hr>
+            <h3>Hovered Table Example</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    To get a row to highlight when it is hoved over in a table use the <code>.table-hover</code> class.
+                    <br> For example, <code>&lt;table class="table table-hover"&gt;</code>
+                </p>
+            </div>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Hovered Table -->
+            <table class="table table-hover">
+                <!-- Table Head -->
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Condensed Table Sub-Section  -->
+            <hr>
+            <h3>Condensed Table Example</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    A Condensed Table uses the <code>.table-condensed </code> class to make a table more compact by cutting cell padding in half.
+                    <br> For example, <code>&lt;table class="table table-condensed"&gt;</code>
+                </p>
+            </div>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Condensed Table -->
+            <table class="table table-condensed">
+                <!-- Table Head -->
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Responsive Table Sub-Section  -->
+            <hr>
+            <h3>Responsive Table Example</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    A Responsive Table uses the <code>.table-responsive </code> class.
+                    <br> For example, <code>&lt;table class="table table-responsive"&gt;</code> (srink the screen size)
+                </p>
+            </div>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Responsive Table -->
+            <table class="table table-condensed table-responsive">
+                <!-- Table Head -->
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+        </div>
+        <!--^^ tables examples -->
+    </section>
+    <!--^^ tables examples -->
+
+
+    <!-- *************************************************************** -->
+    <!-- NavBar Examples -->
+    <section>
+
+        <!-- fixed nav bar cluge -->
+        <br>
+        <br>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- NavBar Examples Container  -->
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <h2 class="header-bg text-padding">
+                NavBar Examples
+                <span class="badge badge-success">New</span>
+            </h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/components/navbar/">Getbootstrap</a> -->
+                <a class="text-danger" target="_blank" href="https://www.w3schools.com/bootstrap/bootstrap_navbar.asp">W3Schools</a>
+            </p>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    The BS navbar has two primary sections:
+                    <br>
+                    <br> (1) the nav <b>brand</b> section and
+                    <br> (2) the nav <b>link</b> section
+                    <br><br> 
+                    The default display of a BS navbar uses the <code>&lt;nav&gt;</code> tag with a few BS classes for default styling.
+                    <br> For example, <code>&lt;nav class="navbar navbar-expand-sm navbar-dark bg-dark"&gt;</code>
+                    <br><br> Read through the <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/components/navbar/">examples</a> in detail for how to (a) use the navbar in a container, (b) change when the nav links expand, (c) change the color of the navbar, (d) add an image to the brand section, (e) make the navbar fixed at the top, and lots and lots of other options.
+            </div>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Generic NavBar Sub-Section  -->
+            <h3>Default NavBar Example</h3>
+
+            <!-- Navigation Section -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+                <a class="navbar-brand" href="#">Navbar Example</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavExample" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavExample">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Interests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Major</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Creative Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <br>
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Right-Side NavBar Sub-Section  -->
+            <h3> Right-Side Links NavBar Example</h3>
+
+            <!-- Navigation Section -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                <a class="navbar-brand" href="#">Navbar Example</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavExample" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavExample">
+
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Interests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Major</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Creative Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- social media links -->
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://facebook.com">FriendFace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com">Tweeter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://linkedin.com">LinkDuhIn</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+        </nav>
+
+        </div>
+        <!--^^ navbar examples container -->
+
+    </section>
+    <!--^^ tables examples -->
+
+    <!-- *************************************************************** -->
+    <!-- Sizing Examples -->
+    <section>
+
+        <!-- fixed nav bar cluge -->
+        <br>
+        <br>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- Sizing Examples Container  -->
+        <div class="container-fluid">
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <h2 class="header-bg text-padding">
+                Content Sizing Examples
+                <span class="badge badge-success">New</span>
+            </h2>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Tutorial links -->
+            <p>
+                <span class="label label-success">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Tutorials
+                </span>
+                &nbsp;-->
+                <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/sizing/">Getbootstrap</a>
+            </p>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Content Sizing Examples Sub-Section  -->
+            <h3>Default Content Sizing Examples Example</h3>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- How To Notes -->
+            <div class="alert alert-warning" role="alert">
+                <p>
+                    BS has utility classes to help with sizing of content inside of containers.
+                    <br><br> Read through the <a class="text-danger" target="_blank" href="https://getbootstrap.com/docs/4.0/utilities/sizing/">examples</a> to see options and how to use these.
+            </div>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Width Sizing Examples Sub-Section  -->
+            <hr>
+            <h3>Width Sizing Examples</h3>
+            <br>
+
+            <div class="w-25 p-3 bg-primary">Width 25% <code>class="w-25"</code></div>
+            <br>
+            <div class="w-50 p-3 bg-primary">Width 50% <code>class="w-50"</code></div>
+            <br>
+            <div class="w-75 p-3 bg-primary">Width 75% <code>class="w-75"</code></div>
+            <br>
+            <div class="w-100 p-3 bg-primary">Width 100% <code>class="w-100"</code></div>
+            <br>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+            <!-- Height Sizing Examples Sub-Section  -->
+            <hr>
+            <h3>Height Sizing Examples</h3>
+            <br>
+
+            <div style="height: 100px; background-color: rgba(0,0,255,0.1);">
+                <div class="h-25 d-inline-block text-center" style="width: 150px; background-color: rgba(0,0,255,.1)">Height 25% <br> <code>class="h-25"</code></div>
+                <div class="h-50 d-inline-block text-center" style="width: 150px; background-color: rgba(0,0,255,.1)">Height 50% <br> <code>class="h-50"</code></div>
+                <div class="h-75 d-inline-block text-center" style="width: 150px; background-color: rgba(0,0,255,.1)">Height 75% <br> <code>class="h-75"</code></div>
+                <div class="h-100 d-inline-block text-center" style="width: 150px; background-color: rgba(0,0,255,.1)">Height 100% <br> <code>class="h-100"</code></div>
+            </div>
+
+        </div>
+        <!--^^ sizing examples container -->
+    </section>
+    <!--^^ sizing examples -->
+
+
+    <!-- *************************************************************** -->
+    <!-- Footer -->
+    <br>
+    <footer class="footer text-padding bg-dark">
+        <div class="container-fluid">
+            <br>
+            <p class="text-center text-white">Built in COMP 105 &copy; 2018</p>
+        </div>
+    </footer>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    
+</body>
+
+</html>

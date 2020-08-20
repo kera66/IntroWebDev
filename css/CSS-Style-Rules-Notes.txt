@@ -1,0 +1,814 @@
+CSS Style Rule Examples v3.1 2.13.18
+
+----------------------------------------------------------
+1.0  Overview
+----------------------------------------------------------
+
+In our projects we will want to use some simple CSS to make our projects more visually appealing with:
+
+	Fonts
+	Colors for text and backgrounds
+	Centering Text
+	Aligning Images
+    Centering Video and Audio elements
+    Styling link tags
+    Styling sections of a page
+	Background Images
+
+Resources:
+
+    * SoloLearn Tutorial - http://www.sololearn.com/Course/CSS/ 
+    - Modules 1-4 (just need to do modules 1-2 for this lab )
+
+    * W3chools CSS Tutorial - http://www.w3schools.com/css/default.asp - and its many examples and other references
+
+You will, and should, use all of these.  And a few others.
+
+
+----------------------------------------------------------
+2.0  Using CSS on our Pages
+----------------------------------------------------------
+
+2.1  How to Use External CSS 
+----------------------------------------------------------
+
+We place our CSS rules in a separate file and link that file to our HTML files.
+
+    <head>
+        ...
+        <link rel="stylesheet" type="text/css" href=“css/style.css”>
+    </head>
+
+
+2.2  CSS Rule Set Syntax
+----------------------------------------------------------
+
+In CSS we create "rule sets".  These rule sets are associated with "selectors".
+
+
+        tag       {   color:      yellow; }  
+      SELECTOR       PROPERTY      VALUE    
+
+
+    <selector> {
+        <property>:  <value>;
+        <property>:  <value>;
+    }
+
+"selectors" are the things we are selecting on the HTML page to apply our rule set.
+
+"selectors" can be <tags> or "classes" or "id's"
+
+Here is an example:
+
+p {
+    color: red;
+    text-align: center;
+}
+
+The part inside the curly braces is the declaration.
+
+The keyword color is a property, and red is a value.
+
+The semicolon after the property-value pair separates it from other property-value pairs in the same declaration.  Do not forget to add this at the end of each rule.
+
+
+2.3  CSS References
+----------------------------------------------------------
+
+Here is a resource that provides a list of all the properties:
+
+    	http://www.w3schools.com/cssreF/default.asp 
+    
+        Selectors -> http://www.w3schools.com/cssreF/css_selectors.asp
+        
+        Web Safe Fonts -> http://www.w3schools.com/cssreF/css_websafe_fonts.asp
+        
+        Colors -> http://www.w3schools.com/cssreF/css_colors.asp
+        (also see --> http://www.w3schools.com/colors/default.asp)
+
+
+----------------------------------------------------------
+3.0  Colors & Fonts
+----------------------------------------------------------
+
+We have already done some very basic CSS.  Lets walk through some other examples to get us started.
+
+3.1  Colors
+----------------------------------------------------------
+
+We can set colors for the background and the font color.
+
+Here is snippet to set a background color.
+
+body {
+    background-color: green;
+}
+
+Here is a snippet to set a font color.
+
+body {
+    color: white;
+}
+
+A.  Setting color by NAME
+
+    background-color:  <colorname>;
+
+Example:
+
+    background-color:  white;
+
+Step through this to see how to choose a color
+
+    http://www.w3schools.com/colors/default.asp
+
+B.  Setting color by HEX value
+
+    background-color: #_ _ _ _ _ _
+
+This takes 6 hex values.  Hex values for from 0..F.
+
+The first 2 values  _ _ are for how much Red to use.
+The second 2 values _ _ are for how much Green to use.
+The last 2 values   _ _ are for how much Blue to use.
+
+Example:
+
+    background-color:  #ff0000;  /* red */
+    background-color:  #00ff00;  /* green */
+    background-color:  #0000ff;  /* blue */
+    background-color:  #ffffff;  /* white */
+    background-color:  #000000;  /* black */
+
+And there are millions of combinations - checkout this cool Color Selector tool:
+
+    https://coolors.co/
+
+C.  Setting color using rgb()
+
+    background-color:  rgb( ___ , ____ , ___ );
+
+Each of these values are from 0..255.
+
+The first value   ____ is for how much Red to use.
+The second value  ____ is for how much Green to use.
+The last value    ____ is for how much Blue to use.
+
+Examples:
+
+    background-color:  rgb( 255, 0, 0);     /* red */    
+    background-color:  rgb( 0, 255, 0);     /* green */
+    background-color:  rgb( 0, 0, 255);     /* blue */
+    background-color:  rgb( 255, 255, 255); /* white */
+    background-color:  rgb( 255, 255, 255); /* black */
+
+D.  Setting saturation of color using rgba()
+
+There is a version of rgb() that is rgba() that accepts a 4th value.
+
+    background-color:  rgba( ___ , ____ , ___, ___ );
+
+Works just like rgb() but the 4th value has a range of 0..1
+
+Setting this value, changes the saturation or opacity of the color.
+
+A value of 1 means full saturation; a value of 0 means no saturation (void).
+
+We usually pick a value between 0..1 - like 0.5 to get 1/2 saturation.
+
+Examples:
+
+    background-color:  rgb( 0, 255, 0, 0.5);   /* green with 1/2 saturation */    
+
+
+3.2  Fonts
+----------------------------------------------------------
+
+There are built in fonts - see them here:
+
+    http://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+There are also lots of other custom fonts available from google fonts - see here:
+
+    https://www.google.com/fonts/
+
+To use external fonts you need to do 2 things
+
+(1) import the font using the @import command
+(2) create a rule using the font-family property.
+
+Here is an example for the font "Roboto"
+
+A.  Import the font - Add this to the very top of your .css file.
+
+	@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+B.  Apply the font - Add this to the body rule set:
+
+	body {
+	    font-family: 'Roboto', sans-serif;
+	}
+
+More on more font properties later:
+
+    http://www.w3schools.com/css/css_font.asp
+
+
+----------------------------------------------------------
+4.0 Creating Classes 
+----------------------------------------------------------
+
+As mentioned, in CSS we create "rule sets".  
+
+These rule sets are associated with "selector"s.
+
+
+        tag       {   color:      yellow; }  
+      SELECTOR       PROPERTY      VALUE    
+
+
+    <selector> {
+        <property>:  <value>;
+        <property>:  <value>;
+    }
+
+So far we have seen that these "selector"s can be HTML tags.  So that the rules sets apply to specific tags.
+
+We often want to create rule sets that we can apply to individually to specific tags. 
+
+To do this we can create a type of "selector" that is called a "class".
+
+For a "class" "selector" we give it a name of our choosing and precede it with a "."
+
+For example lets say we want to be able to selectively use red as a font color.
+
+    color: red;
+
+We could create a class for this:
+
+    .red {
+        color: red;
+    }
+
+And then we can use, or apply, this class in our HTML to specific tags:
+
+    <p class="red">This text is red</p>
+
+
+4.1 Simple Text and Color Changes
+----------------------------------------------------------
+
+Changing the color of text can help make our projects more appealing.
+
+A.  Lets add a few classes with rules for a few colors:
+
+/* -------------------------------------------------------------- */
+/* Font Color Rules */
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.white {
+    color: white;
+}
+
+B.  Now lets use these rule sets in our HTML:
+
+Add:
+
+	class=“red”
+
+to a <p> tag like:
+
+	<p class=“red”>
+
+C.  Background color examples:
+
+/* -------------------------------------------------------------- */
+/* Background Color Rules */
+
+.bg-red {
+    background-color: rgba( 255, 0, 0, 1 );
+}
+
+.bg-green {
+    background-color: rgba( 0, 255, 0, 1 );
+}
+
+.bg-blue {
+    background-color: rgba( 0, 0, 255, 1 );
+}
+
+.bg-white {
+    background-color: rgba( 255, 255, 255, 1 );
+}
+
+.bg-black {
+    background-color: rgba( 0, 0, 0, 1 );
+}
+
+
+4.2 Text Styling
+----------------------------------------------------------
+
+We can create some simple rules to center text and objects (images)
+
+
+A.  Add this rule to the CSS
+
+/* -------------------------------------------------------------- */
+/* Text Alignment Rules */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align:  left;
+}
+
+
+B.  Now use these in the HTML
+
+To center text add:
+	
+	class=“text-center” 
+
+to <p> and <h1..6> tags
+
+
+C.  Other examples:
+
+/* --------------------------------- */
+/*  Text Transformation Rules */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+Apply these to tags on your page. Using
+
+    class="text-uppercase"
+    
+    or
+    
+    class="text-underline"
+
+And you can use more than one class for a tag.
+
+    <h1 class="text-center text-uppercase">
+
+
+----------------------------------------------------------
+5.0 Aligning Objects
+----------------------------------------------------------
+
+We also want to be able to align objects with our text.  
+
+For example to have image centered. 
+
+Or to have an image be on the left or right of text.
+
+And we may want to do this with videos and audio.
+
+We can create some simple rules to center text and objects (images, video, audio)
+
+
+5.1 Aligning Images
+----------------------------------------------------------
+
+We often want to position images - on the left, in the center, and on the right.
+
+/* --------------------------------- */
+/* Image Alignment Rules */
+
+.float-left {
+    float: left;
+    margin-right:  5px;
+    padding: 5px;
+}
+
+.float-right {
+    float: right;
+    margin-right:  5px;
+    padding: 5px;
+}
+
+.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+To center images, for example, add:
+
+    class=“align-center”
+
+to the <img> tag.
+
+
+5.2 Aligning Images
+----------------------------------------------------------
+
+We also we often want to center block elements (video embeds, audio)
+
+To do this add this rule to your CSS:
+
+/* --------------------------------- */
+/* Block Alignment Rules */
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+Now apply this to the HTML
+
+To center objects (video, audio) add:
+
+	class=“center-block”
+
+to the <iframe> or <audio> tags.
+
+
+----------------------------------------------------------
+6.0 Styling Links
+----------------------------------------------------------
+Resource:  https://www.w3schools.com/css/css_link.asp
+
+Here we look at how we can change the style of our links or <a> tags.
+
+
+6.1 Styling Link States
+----------------------------------------------------------
+
+Links have four states:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+To get a sense of how these work lets use these rule sets:
+
+/* --------------------------------- */
+/*  Link Style Rules */
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: orange;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+When setting the style for several link states, there are some order rules:
+
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover
+
+
+6.2 Changing the Links text decoration
+----------------------------------------------------------
+
+The text-decoration property is mostly used to remove underlines from links:
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+6.3 Add some background colors 
+----------------------------------------------------------
+
+a:link {
+    background-color: red;
+}
+
+a:visited {
+    background-color: green;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+a:active {
+    background-color: yellow;
+} 
+
+
+6.4 Simple Nav Buttons
+----------------------------------------------------------
+
+Lets see if we can use these techniues to style our set of <a> tags into a simple button style nav bar.
+
+/* --------------------------------- */
+/*  Link Style Rules */
+
+a:link, a:visited {
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid #ffffff;
+
+}
+
+a:hover, a:active {
+    border: 3px dashed #0000ff;
+    color: #0000ff;
+    background-color: #ffffff;
+    
+}
+
+----------------------------------------------------------
+7.0 HTML <div> tag and applying style rules to sections of a page
+----------------------------------------------------------
+
+Sometimes we want to apply CSS rules to a section of a page; a group of tags.
+
+To do this we use the HTML <div> tag.
+
+The <div> tag defines a division or a section in an HTML document.
+
+The <div> tag is used to group block-elements to format them with CSS.
+
+<div>
+    <h4>This is a heading</h4>
+    <p>This is a paragraph.</p>
+</div>
+
+We can apply classes of style rules to this section or <div> of the page.
+
+For example to apply a background color.  Example:
+
+With this CSS:
+
+.bg-blue {
+    background-color: blue;
+    color: white;
+}
+
+We can apply this rule set to section or <div>
+
+<div class="bg-blue">
+    <h4>This is a heading</h4>
+    <p>This is a paragraph.</p>
+</div>
+
+
+7.1 Using <div> tags to style our <a> tags in our nav section
+----------------------------------------------------------
+
+From our example above about styling our <a> tags we notice that this technique will apply these styles to all your <a> tags.
+
+To get this to work for just the navigation <a> tags create a class:
+
+
+/* --------------------------------- */
+/*  Nav Link Style Rules */
+
+.nav-links a:link, a:visited {
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid #ffffff;
+
+}
+
+.nav-links a:hover, a:active {
+    border: 3px dashed #0000ff;
+    color: #0000ff;
+    background-color: #ffffff;
+    
+}
+
+And then wrap our nav link <a> tags in a <div> and use the class="nav-links"
+
+<div class="nav-links">
+    ...
+</div>
+
+
+----------------------------------------------------------
+x.0 Background Images
+----------------------------------------------------------
+
+x.1 Add a background image to the entire page
+----------------------------------------------------------
+
+A.  Add this to the body style rule:
+
+    /* background image for the page */
+    background: url("images/bg-image-0.jpg"), no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+But now all our text is gone!  Why?
+
+
+===================================================================
+
+Ending CSS:
+
+/*
+    stlye.css
+*/
+
+/* -------------------------------------------------------------- */
+/* Import Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* -------------------------------------------------------------- */
+/* Page Level Rules */
+
+body {
+    background-color: green;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------------------------------------------------- */
+/* Font Color Rules */
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.white {
+    color: white;
+}
+
+/* -------------------------------------------------------------- */
+/* Background Color Rules */
+
+.bg-red {
+    background-color: rgba( 255, 0, 0, 1 );
+}
+
+.bg-green {
+    background-color: rgba( 0, 255, 0, 1 );
+}
+
+.bg-blue {
+    background-color: rgba( 0, 0, 255, 1 );
+}
+
+.bg-white {
+    background-color: rgba( 255, 255, 255, 1 );
+}
+
+.bg-black {
+    background-color: rgba( 0, 0, 0, 1 );
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* Text Alignment Rules */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align:  left;
+}
+
+/* --------------------------------- */
+/*  Text Transformation Rules */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+/* --------------------------------- */
+/* Image Alignment Rules */
+
+.float-left {
+    float: left;
+    margin-right:  5px;
+    padding: 5px;
+}
+
+.float-right {
+    float: right;
+    margin-right:  5px;
+    padding: 5px;
+}
+
+.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+/* --------------------------------- */
+/* Block Alignment Rules */
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------------------- */
+/*  Nav Link Style Rules */
+
+.nav-links a:link, a:visited {
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid #ffffff;
+
+}
+
+.nav-links a:hover, a:active {
+    border: 3px dashed #0000ff;
+    color: #0000ff;
+    background-color: #ffffff;
+    
+}
+
+
+
